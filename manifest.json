@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "name": "Prescrição Quinquenal JFRS",
+  "version": "1.0",
+  "description": "Extension for eproc JFRS",
+  "permissions": ["activeTab", "https://eproc.jfrs.jus.br/eprocV2/*"],
+  "web_accessible_resources": ["icon.png"],
+  "browser_action": {
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    },
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://eproc.jfrs.jus.br/eprocV2/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}

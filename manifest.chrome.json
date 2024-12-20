@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Calculadora de Prescrição Quinquenal",
+  "version": "1.0",
+  "description": "Calcula Prescrição Quinquenal com base no período de tramitação do processo administrativo.",
+  "permissions": ["activeTab"],
+  "host_permissions": ["https://eproc.jfrs.jus.br/eprocV2/*"],
+  "action": {
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    },
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://eproc.jfrs.jus.br/eprocV2/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
