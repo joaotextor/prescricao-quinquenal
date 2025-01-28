@@ -1,16 +1,18 @@
 .prescricao-button {
   float: left;
   margin: 0 6px 5px 0;
-  border: 1px solid #a6a6a6;
-  border-bottom-color: rgb(166, 166, 166);
+  border: 1px solid #a6a6a6 !important;
+  border-bottom-color: rgb(166, 166, 166) !important;
   border-radius: 3px;
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5),
     0 0 2px rgba(255, 255, 255, 0.15) inset,
     0 1px 0 rgba(255, 255, 255, 0.15) inset;
   background: #e4e4e4;
   background-image: linear-gradient(to bottom, #fff, #e4e4e4);
-  height: 18px;
-  padding: 4px 6px;
+  height: 18px !important;
+  width: 18px !important;
+  aspect-ratio: 1 !important;
+  padding: 4px 6px !important;
   outline: 0;
   cursor: default;
   float: left;

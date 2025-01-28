@@ -1,9 +1,14 @@
 {
   "manifest_version": 2,
-  "name": "Prescrição Quinquenal JFRS",
-  "version": "1.0",
-  "description": "Extension for eproc JFRS",
-  "permissions": ["activeTab", "https://eproc.jfrs.jus.br/eprocV2/*"],
+  "name": "Calculadora de Prescrição Quinquenal",
+  "version": "1.0.1",
+  "description": "Calcula Prescrição Quinquenal com base no período de tramitação do processo administrativo previdenciário.",
+  "permissions": [
+    "activeTab",
+    "https://eproc.jfrs.jus.br/eprocV2/*",
+    "https://eproc.jfsc.jus.br/eprocV2/*",
+    "https://eproc.jfpr.jus.br/eprocV2/*"
+  ],
   "web_accessible_resources": ["icon.png"],
   "browser_action": {
     "default_icon": {
@@ -15,7 +20,11 @@
   },
   "content_scripts": [
     {
-      "matches": ["https://eproc.jfrs.jus.br/eprocV2/*"],
+      "matches": [
+        "https://eproc.jfrs.jus.br/eprocV2/*",
+        "https://eproc.jfsc.jus.br/eprocV2/*",
+        "https://eproc.jfpr.jus.br/eprocV2/*"
+      ],
       "js": ["content.js"],
       "css": ["styles.css"]
     }

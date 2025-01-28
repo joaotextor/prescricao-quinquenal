@@ -1,10 +1,10 @@
 function addPrescricaoButton() {
   const toolbarEnds = document.getElementsByClassName("cke_toolbar_end");
-  if (toolbarEnds.length > 0) {
+  if (toolbarEnds.length > 0 && !document.querySelector(".prescricao-button")) {
     const lastToolbarEnd = toolbarEnds[toolbarEnds.length - 1];
     const button = document.createElement("button");
     const icon = document.createElement("img");
-    icon.src = chrome.runtime.getURL("icons/icon64.png");
+    icon.src = chrome.runtime.getURL("icons/icon48.png");
     icon.style.width = "19px";
     icon.style.height = "19px";
     button.appendChild(icon);
