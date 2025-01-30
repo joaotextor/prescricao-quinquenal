@@ -43,7 +43,7 @@ function createPopup() {
   const fields = [
     {
       id: "der",
-      label: "DER do pedido indeferido (ou da revisional, se houver)",
+      label: "DER da Revisional",
     },
     { id: "comunicacao", label: "Comunicação do Indeferimento" },
     { id: "ajuizamento", label: "Data do Ajuizamento" },
@@ -128,15 +128,15 @@ function calculatePrescricao() {
   // Format dates for display
   const formatDate = (date) => date.toLocaleDateString("pt-BR");
 
-  const resultText = `No presente caso, a aposentadoria titularizada pelo segurado restou concedida em XXX, com DER em XXX (Ev. X). O pedido de revisão administrativa para reconhecimento da atividade rural e periodo de tempo especial foi formulado em ${formatDate(
+  const resultText = `No presente caso, a aposentadoria titularizada pelo segurado restou concedida em XXX, com DER em XXX (Ev. X). O pedido de revisão administrativa para reconhecimento da atividade rural e período de tempo especial foi formulado em ${formatDate(
     derDate
   )} sendo o indeferimento comunicado ao autor em ${formatDate(
     comunicacaoDate
-  )} (Ev. X). Assim, o lapso prescricional esteve suspenso por um periodo de ${diasSuspensao} dias. Como a presente ação foi ajuizada em ${formatDate(
+  )} (Ev. X). Assim, o lapso prescricional esteve suspenso por um período de ${diasSuspensao} dias. Como a presente ação foi ajuizada em ${formatDate(
     ajuizamentoDate
   )}, a prescrição atingiria as parcelas vencidas até ${formatDate(
     dataPrescricaoOriginal
-  )}. No entanto, descontando-se o periodo de tramitação do pedido de revisão administrativa, restam prescritas as parcelas vencidas no periodo anterior a ${formatDate(
+  )}. No entanto, descontando-se o período de tramitação do pedido de revisão administrativa, restam prescritas as parcelas vencidas no período anterior a ${formatDate(
     dataPrescricaoFinal
   )}.`;
 
