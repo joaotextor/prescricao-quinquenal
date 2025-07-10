@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Calculadora de Prescrição Quinquenal",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Calcula Prescrição Quinquenal com base no período de tramitação do processo administrativo previdenciário.",
   "permissions": ["activeTab"],
   "host_permissions": [
